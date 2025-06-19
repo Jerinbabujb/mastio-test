@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matsio Test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="first">
+     <img src="./assets/phone_icon.png" alt="phone" class="icon"> <span>087 264 0048 / 012 671 811</span>
+     <span>|</span>
+     </div>
+      <div class="first">
+      <img src="./assets/email.png" alt="email" class="icon"><span>contact@tassociates.ie</span>
+      <span>|</span>
+      </div>
+       <div class="first">
+      <img src="./assets/time.png" alt="time" class="icon"><span>Mon–Thu: 8:00 am to 9:00 pm</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="second">
+   <a href="#"> <img src="./assets/facebook.png" alt="time" class="icon"></a>
+    <a href="#"><img src="./assets/twitter.png" alt="email" class="icon"></a>
+     <a href="#"> <img src="./assets/linkedin.png" alt="phone" class="icon"></a>
+     </div>
+    
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Logo" class="logo-img">
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Order Company</a></li>
+        <li><a href="#">Apply for Tax Rebate</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-left">
+        <h1 class="take">Take The Right Step<br>For Your Business</h1>
+        <p class="para">Tax Associate is a leading consultancy firm that provides simple, effective company registration, and accounting solutions to enterprises in Ireland.</p>
+        <button class="cta">Get Started</button>
+      </div>
+      <div class="hero-right">
+        <div class="form-box">
+          <h3>Apply For Tax Rebate Now</h3>
+          <form>
+            <label>Name<input type="text" placeholder="" required /></label>
+           <label>Email <input type="email" placeholder="" required /></label>
+            <label>PPS Number<input type="text" placeholder="" required /></label>
+            <label><input type="checkbox" class="checkbox" required /> I have read & agreed to the authorisation and the <a href="#"> terms & conditions. </a></label>
+            <br>
+            <button type="submit" class="apply">Apply</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container services-content">
+      <div class="service">
+        <img src="./assets/startupservices.png" alt="Start Up Services" class="services-img"/>
+        <h3>Start Up Services</h3>
+        <p>We support entrepreneurs to build their businesses by providing them with the ideal company formation legal services.</p>
+      </div>
+      <div class="service">
+        <img src="./assets/finance and accounting.png" alt="Finance & Accounting" class="services-img" />
+        <h3>Finance & Accounting</h3>
+        <p>We provide our clients with the best in the market, accounting, and financial services to help accelerate their business growth.</p>
+      </div>
+      <div class="service">
+        <img src="./assets/risk assurance.png" alt="Risk & Assurance" class="services-img" />
+        <h3>Risk & Assurance</h3>
+        <p>We offer risk and assurance services for new as well as established businesses to help them reduce risks and overcome any disruption.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
